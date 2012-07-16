@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		781869D415B4CCFB00FA11BE /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = 781869D315B4CCFB00FA11BE /* LICENCE */; };
+		785B39EE15B4C01300F5DD0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785B39ED15B4C01300F5DD0A /* UIKit.framework */; };
+		785B39F015B4C01300F5DD0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785B39EF15B4C01300F5DD0A /* Foundation.framework */; };
+		785B39F215B4C01300F5DD0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785B39F115B4C01300F5DD0A /* CoreGraphics.framework */; };
+		785B39F815B4C01300F5DD0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 785B39F615B4C01300F5DD0A /* InfoPlist.strings */; };
+		785B39FA15B4C01300F5DD0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 785B39F915B4C01300F5DD0A /* main.m */; };
+		785B39FE15B4C01300F5DD0A /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 785B39FD15B4C01300F5DD0A /* PSAppDelegate.m */; };
+		785B3A0415B4C01300F5DD0A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785B3A0215B4C01300F5DD0A /* MainStoryboard_iPad.storyboard */; };
+		785B3A0715B4C01300F5DD0A /* PSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785B3A0615B4C01300F5DD0A /* PSViewController.m */; };
+		785B3A1415B4C2AB00F5DD0A /* PSMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 785B3A1315B4C2AB00F5DD0A /* PSMenuItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		781869D315B4CCFB00FA11BE /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = SOURCE_ROOT; };
+		785B39E915B4C01300F5DD0A /* PSPDFMenuItemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSPDFMenuItemDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		785B39ED15B4C01300F5DD0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		785B39EF15B4C01300F5DD0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		785B39F115B4C01300F5DD0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		785B39F515B4C01300F5DD0A /* PSPDFMenuItemDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PSPDFMenuItemDemo-Info.plist"; sourceTree = "<group>"; };
+		785B39F715B4C01300F5DD0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		785B39F915B4C01300F5DD0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		785B39FB15B4C01300F5DD0A /* PSPDFMenuItemDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSPDFMenuItemDemo-Prefix.pch"; sourceTree = "<group>"; };
+		785B39FC15B4C01300F5DD0A /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAppDelegate.h; sourceTree = "<group>"; };
+		785B39FD15B4C01300F5DD0A /* PSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAppDelegate.m; sourceTree = "<group>"; };
+		785B3A0315B4C01300F5DD0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		785B3A0515B4C01300F5DD0A /* PSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSViewController.h; sourceTree = "<group>"; };
+		785B3A0615B4C01300F5DD0A /* PSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSViewController.m; sourceTree = "<group>"; };
+		785B3A1215B4C2AB00F5DD0A /* PSMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSMenuItem.h; path = ../PSMenuItem.h; sourceTree = "<group>"; };
+		785B3A1315B4C2AB00F5DD0A /* PSMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSMenuItem.m; path = ../PSMenuItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		785B39E615B4C01300F5DD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785B39EE15B4C01300F5DD0A /* UIKit.framework in Frameworks */,
+				785B39F015B4C01300F5DD0A /* Foundation.framework in Frameworks */,
+				785B39F215B4C01300F5DD0A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		785B39DE15B4C01300F5DD0A = {
+			isa = PBXGroup;
+			children = (
+				785B39F315B4C01300F5DD0A /* PSMenuItemDemo */,
+				785B39EC15B4C01300F5DD0A /* Frameworks */,
+				785B39EA15B4C01300F5DD0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		785B39EA15B4C01300F5DD0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				785B39E915B4C01300F5DD0A /* PSPDFMenuItemDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		785B39EC15B4C01300F5DD0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				785B39ED15B4C01300F5DD0A /* UIKit.framework */,
+				785B39EF15B4C01300F5DD0A /* Foundation.framework */,
+				785B39F115B4C01300F5DD0A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		785B39F315B4C01300F5DD0A /* PSMenuItemDemo */ = {
+			isa = PBXGroup;
+			children = (
+				785B3A1215B4C2AB00F5DD0A /* PSMenuItem.h */,
+				785B3A1315B4C2AB00F5DD0A /* PSMenuItem.m */,
+				781869D315B4CCFB00FA11BE /* LICENCE */,
+				785B3A1515B4C2B600F5DD0A /* Demo */,
+			);
+			name = PSMenuItemDemo;
+			path = PSPDFMenuItemDemo;
+			sourceTree = "<group>";
+		};
+		785B39F415B4C01300F5DD0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				785B39F515B4C01300F5DD0A /* PSPDFMenuItemDemo-Info.plist */,
+				785B39F615B4C01300F5DD0A /* InfoPlist.strings */,
+				785B39F915B4C01300F5DD0A /* main.m */,
+				785B39FB15B4C01300F5DD0A /* PSPDFMenuItemDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		785B3A1515B4C2B600F5DD0A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				785B39FC15B4C01300F5DD0A /* PSAppDelegate.h */,
+				785B39FD15B4C01300F5DD0A /* PSAppDelegate.m */,
+				785B3A0215B4C01300F5DD0A /* MainStoryboard_iPad.storyboard */,
+				785B3A0515B4C01300F5DD0A /* PSViewController.h */,
+				785B3A0615B4C01300F5DD0A /* PSViewController.m */,
+				785B39F415B4C01300F5DD0A /* Supporting Files */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		785B39E815B4C01300F5DD0A /* PSPDFMenuItemDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 785B3A0A15B4C01300F5DD0A /* Build configuration list for PBXNativeTarget "PSPDFMenuItemDemo" */;
+			buildPhases = (
+				785B39E515B4C01300F5DD0A /* Sources */,
+				785B39E615B4C01300F5DD0A /* Frameworks */,
+				785B39E715B4C01300F5DD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSPDFMenuItemDemo;
+			productName = PSPDFMenuItemDemo;
+			productReference = 785B39E915B4C01300F5DD0A /* PSPDFMenuItemDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		785B39E015B4C01300F5DD0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PS;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Peter Steinberger";
+			};
+			buildConfigurationList = 785B39E315B4C01300F5DD0A /* Build configuration list for PBXProject "PSPDFMenuItemDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 785B39DE15B4C01300F5DD0A;
+			productRefGroup = 785B39EA15B4C01300F5DD0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				785B39E815B4C01300F5DD0A /* PSPDFMenuItemDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		785B39E715B4C01300F5DD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785B39F815B4C01300F5DD0A /* InfoPlist.strings in Resources */,
+				785B3A0415B4C01300F5DD0A /* MainStoryboard_iPad.storyboard in Resources */,
+				781869D415B4CCFB00FA11BE /* LICENCE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		785B39E515B4C01300F5DD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785B39FA15B4C01300F5DD0A /* main.m in Sources */,
+				785B39FE15B4C01300F5DD0A /* PSAppDelegate.m in Sources */,
+				785B3A0715B4C01300F5DD0A /* PSViewController.m in Sources */,
+				785B3A1415B4C2AB00F5DD0A /* PSMenuItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		785B39F615B4C01300F5DD0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				785B39F715B4C01300F5DD0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		785B3A0215B4C01300F5DD0A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				785B3A0315B4C01300F5DD0A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		785B3A0815B4C01300F5DD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		785B3A0915B4C01300F5DD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		785B3A0B15B4C01300F5DD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSPDFMenuItemDemo/PSPDFMenuItemDemo-Prefix.pch";
+				INFOPLIST_FILE = "PSPDFMenuItemDemo/PSPDFMenuItemDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		785B3A0C15B4C01300F5DD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PSPDFMenuItemDemo/PSPDFMenuItemDemo-Prefix.pch";
+				INFOPLIST_FILE = "PSPDFMenuItemDemo/PSPDFMenuItemDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		785B39E315B4C01300F5DD0A /* Build configuration list for PBXProject "PSPDFMenuItemDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				785B3A0815B4C01300F5DD0A /* Debug */,
+				785B3A0915B4C01300F5DD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		785B3A0A15B4C01300F5DD0A /* Build configuration list for PBXNativeTarget "PSPDFMenuItemDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				785B3A0B15B4C01300F5DD0A /* Debug */,
+				785B3A0C15B4C01300F5DD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 785B39E015B4C01300F5DD0A /* Project object */;
+}
