@@ -68,7 +68,7 @@ BOOL PSPDFPIsMenuItemSelector(SEL selector) {
  Then we find the UIMenuController and search for the corresponding PSMenuItem.
  If the kMenuItemTrailer is not detected, we call the original implementation.
 
- This all wouldn't be neccesasry if UIMenuController would call our selectors with the UIMenuItem as sender.
+ This all wouldn't be necessary if UIMenuController would call our selectors with the UIMenuItem as sender.
  */
 + (void)installMenuHandlerForObject:(id)object {
     @autoreleasepool {
