@@ -77,12 +77,12 @@ BOOL PSPDFPIsMenuItemSelector(SEL selector) {
             Class objectClass = class_isMetaClass(object_getClass(object)) ? object : [object class];
 
             // check if menu handler has been already installed.
-            SEL canPerformActionSEL = NSSelectorFromString(@"pspdf_canPerformAction:withSender:");
+            SEL canPerformActionSEL = @selector(pspdf_canPerformAction:withSender:);
             if (!class_getInstanceMethod(objectClass, canPerformActionSEL)) {
 
                 // add canBecomeFirstResponder if it is not returning YES. (or if we don't know)
                 if (object == objectClass || ![object canBecomeFirstResponder]) {
-                    SEL canBecomeFRSEL = NSSelectorFromString(@"pspdf_canBecomeFirstResponder");
+                    SEL canBecomeFRSEL = @selector(pspdf_canBecomeFirstResponder);
                     IMP canBecomeFRIMP = imp_implementationWithBlock(PSPDFBlockImplCast(^(id _self) {
                         return YES;
                     }));
@@ -97,7 +97,7 @@ BOOL PSPDFPIsMenuItemSelector(SEL selector) {
                 PSPDFReplaceMethod(objectClass, @selector(canPerformAction:withSender:), canPerformActionSEL, canPerformActionIMP);
 
                 // swizzle methodSignatureForSelector:.
-                SEL methodSignatureSEL = NSSelectorFromString(@"pspdf_methodSignatureForSelector:");
+                SEL methodSignatureSEL = @selector(pspdf_methodSignatureForSelector:);
                 IMP methodSignatureIMP = imp_implementationWithBlock(PSPDFBlockImplCast(^(id _self, SEL selector) {
                     if (PSPDFPIsMenuItemSelector(selector)) {
                         return [NSMethodSignature signatureWithObjCTypes:"v@:@"]; // fake it.
@@ -108,7 +108,7 @@ BOOL PSPDFPIsMenuItemSelector(SEL selector) {
                 PSPDFReplaceMethod(objectClass, @selector(methodSignatureForSelector:), methodSignatureSEL, methodSignatureIMP);
 
                 // swizzle forwardInvocation:
-                SEL forwardInvocationSEL = NSSelectorFromString(@"pspdf_forwardInvocation:");
+                SEL forwardInvocationSEL = @selector(pspdf_forwardInvocation:);
                 IMP forwardInvocationIMP = imp_implementationWithBlock(PSPDFBlockImplCast(^(id _self, NSInvocation *invocation) {
                     if (PSPDFPIsMenuItemSelector([invocation selector])) {
                         for (PSMenuItem *menuItem in [UIMenuController sharedMenuController].menuItems) {
