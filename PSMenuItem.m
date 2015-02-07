@@ -102,7 +102,7 @@ BOOL PSPDFPIsMenuItemSelector(SEL selector) {
                     if (PSPDFPIsMenuItemSelector(selector)) {
                         return [NSMethodSignature signatureWithObjCTypes:"v@:@"]; // fake it.
                     }else {
-                        return (NSMethodSignature *)objc_msgSend(_self, methodSignatureSEL, selector);
+                        return ((NSMethodSignature * (*)(id, SEL, SEL))objc_msgSend)(_self, methodSignatureSEL, selector);
                     }
                 }));
                 PSPDFReplaceMethod(objectClass, @selector(methodSignatureForSelector:), methodSignatureSEL, methodSignatureIMP);
@@ -117,7 +117,7 @@ BOOL PSPDFPIsMenuItemSelector(SEL selector) {
                             }
                         }
                     }else {
-                        objc_msgSend(_self, forwardInvocationSEL, invocation);
+                        ((void (*)(id, SEL, NSInvocation *))objc_msgSend)(_self, forwardInvocationSEL, invocation);
                     }
                 }));
                 PSPDFReplaceMethod(objectClass, @selector(forwardInvocation:), forwardInvocationSEL, forwardInvocationIMP);
