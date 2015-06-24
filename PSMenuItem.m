@@ -71,6 +71,8 @@ BOOL PSPDFPIsMenuItemSelector(SEL selector) {
  This all wouldn't be necessary if UIMenuController would call our selectors with the UIMenuItem as sender.
  */
 + (void)installMenuHandlerForObject:(id)object {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     @autoreleasepool {
         @synchronized(self) {
             // object can be both a class or an instance of a class.
@@ -124,6 +126,7 @@ BOOL PSPDFPIsMenuItemSelector(SEL selector) {
             }
         }
     }
+#pragma clang diagnostic pop
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
